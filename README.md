@@ -11,22 +11,17 @@ This project is part of the **Semester VII Datathon (AY 2025-26)** at **Walchand
 
 ---
 
-## 👥 Team Information
+## 👤 Project Information
 
-**Team Name:** \[Replace with your team name]
-**Team Size:** 3 Members
-
-**Roles & Responsibilities:**
-
-* **Data Wrangler:** Data collection, cleaning, preprocessing
-* **Model Developer:** Modeling, forecasting, machine learning
-* **Visualizer/Reporter:** Dashboard creation, insights, reporting
+**Individual Project**: This work is carried out independently by a single participant.
+**Name:** TEJAS
+**Role:** End-to-end execution (data collection, cleaning, preprocessing, modeling, visualization, reporting)
 
 ---
 
 ## 🎯 Problem Statement
 
-The tech job market faces a widening **skill gap** — companies struggle to hire the right talent while professionals are unsure which skills to pursue. Our goal is to:
+The tech job market faces a widening **skill gap** — companies struggle to hire the right talent while professionals are unsure which skills to pursue. My goal is to:
 
 * Identify **high-demand skills** in the next 12–18 months
 * Quantify the **gap** between current workforce skills and industry needs
@@ -38,7 +33,7 @@ The tech job market faces a widening **skill gap** — companies struggle to hir
 
 ## 📂 Datasets
 
-We will be using Kaggle datasets:
+Using Kaggle datasets:
 
 1. **Data Science Job Market Dataset** – 10k+ job listings with skills, salaries, locations
 2. **Job-Skill-Set Dataset** – Pre-processed skill extractions for job listings
@@ -121,7 +116,7 @@ We will be using Kaggle datasets:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/<your-team>/datathon-2025-skill-gap.git
+   git clone https://github.com/<your-username>/datathon-2025-skill-gap.git
    cd datathon-2025-skill-gap
    ```
 2. Install dependencies:
@@ -155,19 +150,17 @@ We will be using Kaggle datasets:
 * Data Handling ✅
 * Analytical Approach ✅
 * Insights & Visualization ✅
-* Teamwork & Execution ✅
+* Independent Execution ✅
 
 ---
 
-## 📌 Contributors
+## 📌 Contributor
 
-* \[Name 1] – Data Wrangler
-* \[Name 2] – Model Developer
-* \[Name 3] – Visualizer/Reporter
+* TEJAS – Independent Participant (all roles)
 
 ---
 
-📧 For questions or clarifications, contact: work.tejasx@gmail.com
+📧 For questions or clarifications, contact: [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)
 
 ---
 
