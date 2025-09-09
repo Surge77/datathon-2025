@@ -13,9 +13,10 @@ This project is part of the **Semester VII Datathon (AY 2025-26)** at **Walchand
 
 ## 👤 Project Information
 
-- **Individual Project**: This work is carried out independently by a single participant.  
-- **Name:** TEJAS  
-- **Role:** End-to-end execution (data collection, cleaning, preprocessing, modeling, visualization, reporting)  
+- **Individual Project**: This work is carried out Group of Two People.  
+- **Name:** TEJAS
+- **Name:** Tirth  
+- **Roles:** End-to-end execution (data collection, cleaning, preprocessing, modeling, visualization, reporting)  
 
 ---
 
@@ -154,10 +155,10 @@ Using Kaggle datasets:
 
 ---
 
-## 📌 Contributor
+## 📌 Contributors
 
-* TEJAS – Independent Participant (all roles)
-
+* TEJAS –(Leader)
+* Tirth
 ---
 
 📧 For questions or clarifications, contact: [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)
