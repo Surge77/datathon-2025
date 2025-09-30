@@ -16,6 +16,7 @@ This project is part of the **Semester VII Datathon (AY 2025-26)** at **Walchand
 - **Individual Project**: This work is carried out Group of Two People.  
 - **Name:** TEJAS
 - **Name:** Tirth  
+- **name:** Mahesh
 - **Roles:** End-to-end execution (data collection, cleaning, preprocessing, modeling, visualization, reporting)  
 
 ---
@@ -159,6 +160,7 @@ Using Kaggle datasets:
 
 * TEJAS –(Leader)
 * Tirth
+* Mahesh
 ---
 
 📧 For questions or clarifications, contact: [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)

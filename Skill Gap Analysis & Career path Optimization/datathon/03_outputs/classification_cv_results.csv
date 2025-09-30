@@ -1,0 +1,6 @@
+model,accuracy_mean,accuracy_std,f1_macro_mean,f1_macro_std,precision_macro_mean,precision_macro_std,recall_macro_mean,recall_macro_std,roc_auc_ovr_mean,roc_auc_ovr_std
+DecisionTree,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,,
+GradientBoosting,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,,
+RandomForest,0.999542,0.000243,0.99802,0.001055,0.999682,0.000169,0.996383,0.001918,,
+LogisticRegression,0.646733,0.011118,0.440363,0.00753,0.433998,0.007948,0.450078,0.007736,,
+DummyMajority,0.48015,0.000102,0.216262,3.1e-05,0.16005,3.4e-05,0.333333,0.0,,
