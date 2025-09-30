@@ -14,9 +14,9 @@ This project is part of the **Semester VII Datathon (AY 2025-26)** at **Walchand
 ## 👤 Project Information
 
 - **Individual Project**: This work is carried out Group of Two People.  
-- **Name:** TEJAS
-- **Name:** Tirth  
-- **name:** Mahesh
+- **Name:** Tirth  Chankeshwara
+- **Name:** Tejas Deshmane
+- **name:** Mahesh Bhimde
 - **Roles:** End-to-end execution (data collection, cleaning, preprocessing, modeling, visualization, reporting)  
 
 ---
@@ -158,9 +158,9 @@ Using Kaggle datasets:
 
 ## 📌 Contributors
 
-* TEJAS –(Leader)
-* Tirth
-* Mahesh
+* Tirth Chankeshwara
+* TEJAS Deshmane
+* Mahesh Bhimde
 ---
 
 📧 For questions or clarifications, contact: [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)
