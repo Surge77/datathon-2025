@@ -1,170 +1,130 @@
-# 📊 Datathon 2025 - Skill Gap Analysis & Career Path Optimization
+# 📊 Skill Gap Analysis & Career Path Optimization
 
-## 📝 Project Overview
+> Analyzing the tech job market to help you make smarter career decisions and predict what skills will be in demand next.
 
-This project aims to analyze the evolving **skill landscape in the technology job market** to identify critical skill gaps and predict future demand trends. The insights generated will help:
-
-* **Students & Professionals**: make informed career development decisions.
-* **Organizations**: optimize workforce planning and training investments.
-
-This project is part of the **Semester VII Datathon (AY 2025-26)** at **Walchand Institute of Technology, Solapur**.
+**🏫 Institution:** Walchand Institute of Technology, Solapur  
+**📅 Academic Year:** 2025-26 (Semester VII Datathon)
 
 ---
 
-## 👤 Project Information
+## 👥 Team
 
-- **Individual Project**: This work is carried out Group of Two People.  
-- **Name:** Tirth  Chankeshwara
-- **Name:** Tejas Deshmane
-- **Name:** Mahesh Bhimde
-- **Roles:** End-to-end execution (data collection, cleaning, preprocessing, modeling, visualization, reporting)  
+- Tirth Chankeshwara
+- Tejas Deshmane  
+- Mahesh Bhimde
 
 ---
 
-## 🎯 Problem Statement
+## 🎯 What We're Solving
 
-The tech job market faces a widening **skill gap** — companies struggle to hire the right talent while professionals are unsure which skills to pursue. My goal is to:
+There's a huge gap between what tech professionals know and what companies actually need. We're tackling this by:
 
-* Identify **high-demand skills** in the next 12–18 months
-* Quantify the **gap** between current workforce skills and industry needs
-* Map **skill combinations** to salary trends
-* Recommend **optimal learning paths** for career growth
-* Highlight **geographic variations** in demand
-
----
-
-## 📂 Datasets
-
-Using Kaggle datasets:
-
-1. **Data Science Job Market Dataset** – 10k+ job listings with skills, salaries, locations
-2. **Job-Skill-Set Dataset** – Pre-processed skill extractions for job listings
-3. **Global AI Job Market & Salary Trends 2025** – 15k+ listings across 50+ countries
-
-**Data Integration Strategy:** Standardize skill names, unify schema, merge on skills/job titles/salaries.
+- 📈 Predicting which skills will be hot in the next 12–18 months
+- 🔍 Finding the exact gaps between what people know vs. what jobs require
+- 💰 Showing how different skill combinations affect your salary
+- 🗺️ Recommending the best learning paths for career growth
+- 🌍 Mapping which skills are in demand in different locations
 
 ---
 
-## ⚙️ Methodology & Phases
+## 📦 Our Data Sources
 
-### **Phase 1: Data Understanding & Preprocessing (Deadline: 06-Sep-2025)**
+We're working with three Kaggle datasets:
 
-* Data profiling & dictionary creation
-* Handling missing values, duplicates, outliers
-* Feature engineering: skill scores, salary-adjusted metrics, trend indicators
+1. **Data Science Job Market Dataset** — 10,000+ real job listings with skills, salaries, and locations
+2. **Job-Skill-Set Dataset** — Already processed skill data mapped to specific jobs
+3. **Global AI Job Market & Salary Trends 2025** — 15,000+ listings from 50+ countries worldwide
 
-### **Phase 2: Exploratory Data Analysis (Deadline: 13-Sep-2025)**
-
-* Skill frequency & salary distribution
-* Temporal trends (2022–2025)
-* Geographic variations
-* Visualizations: heatmaps, correlation graphs, time series plots
-
-### **Phase 3: Modeling & Predictive Analytics (Deadline: 27-Sep-2025)**
-
-* Forecasting skill demand (Prophet, ARIMA)
-* Salary prediction (Random Forest, XGBoost)
-* Clustering for career archetypes
-* Job-role classification
-
-### **Phase 4: Dashboard & Insights (Deadline: 08-Oct-2025)**
-
-* Build interactive dashboard in **Power BI/Tableau**
-* Include: Skill tracker, salary calculator, career path visualizer, geographic skill map
-* Deliver final **report** and **presentation slides**
+We're combining these by standardizing skill names and merging based on common fields like skills, job titles, and salaries.
 
 ---
 
-## 📊 Deliverables
+## 🛠️ How We're Doing It
 
-* Clean datasets + Data Dictionary
-* Jupyter notebooks (preprocessing, EDA, modeling)
-* Machine learning models with benchmarks
-* Interactive dashboard (Power BI/Tableau)
-* Final Report (PDF/DOCX)
-* Presentation (PPTX)
+### **Phase 1: Cleaning the Data**
+First, we need clean data. This means fixing missing values, removing duplicates, handling weird outliers, and creating new useful features like skill scores and normalized salaries.
+
+### **Phase 2: Understanding the Data**
+Here we dig deep into what the data tells us. Which skills appear most? How do salaries vary? What's trending from 2022 to 2025? Where are jobs located? We use heatmaps, graphs, and charts to visualize everything.
+
+### **Phase 3: Building Prediction Models**
+This is where machine learning comes in:
+- **Forecasting skill demand** using Prophet and ARIMA
+- **Predicting salaries** with Random Forest and XGBoost
+- **Grouping similar careers** using clustering
+- **Classifying job roles** automatically
+
+### **Phase 4: Creating the Dashboard**
+We're building an interactive dashboard where you can:
+- Track which skills are trending
+- Estimate your potential salary
+- Explore career paths
+- See skill demand by location
 
 ---
 
-## 🏆 Success Criteria
-
-* **Model Accuracy:** >85% forecasting accuracy
-* **Business Insights:** Clear, actionable recommendations
-* **Dashboard Usability:** Intuitive, interactive, decision-friendly
-* **Documentation:** Clear README, well-documented notebooks, structured repo
-
----
-
-## 📁 Repository Structure
+## 📁 What You'll Find Here
 
 ```
-├── data/               # Links or metadata for datasets (raw not uploaded if restricted)
-├── notebooks/          # Jupyter notebooks for each phase
+├── data/                    # Info about our datasets
+├── notebooks/               # Our analysis step-by-step
 │   ├── 01_preprocessing.ipynb
 │   ├── 02_eda.ipynb
-│   ├── 03_modeling.ipynb
-├── scripts/            # Python scripts for preprocessing/modeling
-├── outputs/            # Graphs, plots, metrics, evaluation reports
-├── dashboards/         # Power BI / Tableau files
-├── report/             # Final report & presentation
-├── README.md           # Project overview (this file)
-└── requirements.txt    # Dependencies
+│   └── 03_modeling.ipynb
+├── scripts/                 # Python code we wrote
+├── outputs/                 # All our graphs and charts
+├── dashboards/              # Interactive dashboards
+├── report/                  # Final writeup and presentation
+└── requirements.txt         # Libraries you'll need
 ```
 
 ---
 
-## 🚀 How to Reproduce
+## 🚀 Want to Run This Yourself?
 
-1. Clone this repository:
+**1. Get the code:**
+```bash
+git clone https://github.com/<username>/datathon-2025-skill-gap.git
+cd datathon-2025-skill-gap
+```
 
-   ```bash
-   git clone https://github.com/<your-username>/datathon-2025-skill-gap.git
-   cd datathon-2025-skill-gap
-   ```
-2. Install dependencies:
+**2. Install what you need:**
+```bash
+pip install -r requirements.txt
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Open and run Jupyter notebooks in order:
+**3. Run the notebooks:**
+Just open them in order (preprocessing → EDA → modeling) and run all cells.
 
-   * `01_preprocessing.ipynb`
-   * `02_eda.ipynb`
-   * `03_modeling.ipynb`
-4. View dashboards in **Power BI/Tableau** (`dashboards/` folder).
-
----
-
-## 📅 Timeline
-
-| Phase   | Deadline    | Deliverables                    |
-| ------- | ----------- | ------------------------------- |
-| Phase 1 | 06-Sep-2025 | Data collection & preprocessing |
-| Phase 2 | 13-Sep-2025 | EDA & insights                  |
-| Phase 3 | 27-Sep-2025 | Modeling & evaluation           |
-| Phase 4 | 08-Oct-2025 | Dashboard, report, presentation |
+**4. Check out the dashboard:**
+Open the Power BI or Tableau files in the `dashboards/` folder.
 
 ---
 
-## 👨‍🏫 Faculty Evaluation Mapping
+## 📅 Our Timeline
 
-* Problem Framing ✅
-* Data Handling ✅
-* Analytical Approach ✅
-* Insights & Visualization ✅
-* Independent Execution ✅
-
----
-
-## 📌 Contributors
-
-* Tirth Chankeshwara
-* TEJAS Deshmane
-* Mahesh Bhimde
----
-
-📧 For questions or clarifications, contact: [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)
+| Phase | Date | What We're Delivering |
+|-------|------|----------------------|
+| Phase 1 | Sep 6, 2025 | Cleaned and ready data |
+| Phase 2 | Sep 13, 2025 | All our analysis and insights |
+| Phase 3 | Sep 27, 2025 | Working prediction models |
+| Phase 4 | Oct 8, 2025 | Dashboard + final report |
 
 ---
 
-⚡ *This repository is maintained as part of the Semester VII Datathon (AY 2025-26) at WIT Solapur.*
+## 🎯 What Success Looks Like
+
+- ✅ **Accurate predictions** — At least 85% accuracy on our forecasts
+- ✅ **Useful insights** — Recommendations you can actually act on
+- ✅ **Easy-to-use dashboard** — Anyone should be able to explore the data
+- ✅ **Clear documentation** — Everything explained so you can reproduce our work
+
+---
+
+## 📧 Questions?
+
+Reach out to us: [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)
+
+---
+
+⚡ *Datathon Project - Semester VII | Walchand Institute of Technology, Solapur*
