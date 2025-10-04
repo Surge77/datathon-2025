@@ -16,7 +16,7 @@ This project is part of the **Semester VII Datathon (AY 2025-26)** at **Walchand
 - **Individual Project**: This work is carried out Group of Two People.  
 - **Name:** Tirth  Chankeshwara
 - **Name:** Tejas Deshmane
-- **name:** Mahesh Bhimde
+- **Name:** Mahesh Bhimde
 - **Roles:** End-to-end execution (data collection, cleaning, preprocessing, modeling, visualization, reporting)  
 
 ---

@@ -1,3 +1,0 @@
-model,MAE_mean,MAE_std,RMSE_mean,RMSE_std,R2_mean,R2_std
-Ridge,24556.2505,-391.86209,36261.126803,-30.409668,0.429211,0.003771
-SGD_huber,,,,,,
