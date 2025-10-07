@@ -2,7 +2,7 @@
 
 > A data-driven exploration of the global tech job market — identifying the most in-demand skills, analyzing salary trends, and revealing actionable insights to bridge the gap between industry demand and workforce readiness.
 
-
+**🏫 Institution:** Walchand Institute of Technology, Solapur
 **📅 Academic Year:** 2025–26 (Semester VII Datathon)
 
 ---
