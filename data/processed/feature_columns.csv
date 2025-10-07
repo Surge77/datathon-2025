@@ -1,0 +1,69 @@
+0
+experience_level_ord
+loc_freq
+company_size_freq
+posting_year
+posting_month
+posting_quarter
+posting_dayofweek
+days_since_posting
+remote_ratio
+remote_bucket
+remote_hybrid
+remote_onsite
+remote_remote
+title_AI Architect
+title_AI Consultant
+title_AI Product Manager
+title_AI Research Scientist
+title_AI Software Engineer
+title_AI Specialist
+title_Autonomous Systems Engineer
+title_Computer Vision Engineer
+title_Data Analyst
+title_Data Analyst (Remote)
+title_Data Analyst in office
+title_Data Engineer
+title_Data Engineer (Remote)
+title_Data Engineer in office
+title_Data Scientist
+title_Data Scientist in office
+title_Deep Learning Engineer
+title_Head of AI
+title_ML Ops Engineer
+title_Machine Learning Engineer
+title_Machine Learning Engineer (Remote)
+title_Machine Learning Engineer in office
+title_Machine Learning Researcher
+title_NLP Engineer
+title_Principal Data Scientist
+title_Research Scientist
+title_Robotics Engineer
+title_Statistician
+title_Statistician (Remote)
+title_Statistician in office
+title_other
+skill__python
+skill__sql
+skill__tensorflow
+skill__kubernetes
+skill__pytorch
+skill__scala
+skill__linux
+skill__git
+skill__java
+skill__gcp
+skill__hadoop
+skill__r
+skill__tableau
+skill__computer vision
+skill__data visualization
+skill__spark
+skill__mlops
+skill__azure
+skill__deep learning
+skill__nlp
+skill__aws
+skill__mathematics
+skill__docker
+skill__statistics

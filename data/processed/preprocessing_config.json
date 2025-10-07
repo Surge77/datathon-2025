@@ -1,0 +1,7 @@
+{
+  "top_k_skills": 24,
+  "feature_count": 68,
+  "random_state": 42,
+  "target": "log_salary_midpoint",
+  "iqr_cap_k": 1.5
+}
