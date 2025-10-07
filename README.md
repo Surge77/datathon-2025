@@ -110,9 +110,7 @@ datathon-2025/
 │       └── dataset3_ai_job_dataset1.csv
 │
 ├── models/                          # Trained model artifacts
-│   ├── salary_predictor.pkl
 │   ├── skill_demand_forecast.pkl
-│   └── skill_clusterer.pkl
 │
 ├── notebooks/                       # Jupyter notebooks by phase
 │   ├── 04_feature_engineering.ipynb
