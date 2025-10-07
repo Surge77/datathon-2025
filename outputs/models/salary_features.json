@@ -1,0 +1,188 @@
+{
+  "created_at": "2025-10-07 23:04:35",
+  "target": "salary",
+  "log1p": true,
+  "feature_spec": [
+    {
+      "name": "job_title",
+      "type": "categorical",
+      "description": "Categorical feature"
+    },
+    {
+      "name": "experience_level",
+      "type": "categorical",
+      "description": "Categorical feature"
+    },
+    {
+      "name": "employment_type",
+      "type": "categorical",
+      "description": "Categorical feature"
+    },
+    {
+      "name": "work_setting",
+      "type": "categorical",
+      "description": "Categorical feature"
+    },
+    {
+      "name": "industry",
+      "type": "categorical",
+      "description": "Categorical feature"
+    },
+    {
+      "name": "years_experience",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "salary_in_usd",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "salary_usd",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "remote_ratio",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "benefits_score",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_python",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_sql",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_tensorflow",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_kubernetes",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_pytorch",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_scala",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_linux",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_git",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_java",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_gcp",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_hadoop",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_r",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_tableau",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_computer_vision",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_data_visualization",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_spark",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_mlops",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_azure",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_deep_learning",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_nlp",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_aws",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_mathematics",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_docker",
+      "type": "numeric",
+      "description": "Numeric feature"
+    },
+    {
+      "name": "skill_statistics",
+      "type": "numeric",
+      "description": "Numeric feature"
+    }
+  ],
+  "skills_top_n": 30,
+  "preprocessing": "OneHot + StandardScaler",
+  "train_rows": 3800,
+  "valid_rows": 950,
+  "models_evaluated": [
+    "BaselineMedian",
+    "Ridge",
+    "RandomForest",
+    "XGBRegressor"
+  ],
+  "winner": "BaselineMedian"
+}

@@ -1,6 +1,6 @@
 # 📊 Skill Gap Analysis & Career Path Optimization
 
-> A data-driven exploration of the global tech job market — identifying the most in-demand skills, analyzing salary trends, and revealing actionable insights to bridge the gap between industry demand and workforce readiness.
+> A data-driven exploration of the global tech job market — identifying the most in-demand skills, analyzing salary trends, forecasting future demand, and revealing actionable insights to bridge the gap between industry needs and workforce readiness.
 
 ---
 
@@ -16,11 +16,11 @@
 
 The rapid evolution of technology has created a significant **skill gap** between what industries demand and what professionals currently possess. This project aims to:
 
-* Forecast the **future demand** of tech skills (12–18 months ahead)
+* Forecast **future demand** for tech skills (12–18 months ahead)
 * Quantify **skill gaps** across roles, locations, and experience levels
 * Analyze **salary variations** based on skill combinations
 * Provide **data-driven career recommendations** and **learning paths**
-* Visualize skill trends and insights through an **interactive dashboard**
+* Visualize trends and insights through an **interactive dashboard**
 
 ---
 
@@ -28,11 +28,11 @@ The rapid evolution of technology has created a significant **skill gap** betwee
 
 We integrated three primary Kaggle datasets:
 
-1. **Data Science Job Market (brsahan)** – 10K+ listings; job titles, locations, salaries, skills.
+1. **Data Science Job Market (brsahan)** – 10K+ listings; job titles, locations, salaries, and skills.
 2. **Job-Skill-Set (batuhanmutlu)** – curated mapping of job roles to extracted skill sets.
 3. **Global AI Job Market (bismasajjad)** – 15K+ listings across 50+ countries with salary, experience, and company data.
 
-**Integration Strategy:** Columns were harmonized (job titles, skills, currencies, experience) and merged into a unified `cleaned_master.csv` dataset.
+**Integration Strategy:** Columns were harmonized (job titles, skills, currencies, experience) and merged into a unified dataset `cleaned_master.csv`.
 
 ---
 
@@ -41,39 +41,46 @@ We integrated three primary Kaggle datasets:
 ### **Phase 1 – Data Collection & Cleaning**
 
 * Gathered raw datasets from Kaggle sources.
-* Standardized column names and data types.
-* Handled missing values, duplicates, and outliers.
-* Generated `data_quality_report.json` for validation metrics.
+* Standardized schema, handled missing values, duplicates, and outliers.
+* Validated integrity using automated quality checks.
+* Generated `data_quality_report.json` summarizing completeness and validity.
 
 ### **Phase 2 – Pre-processing & Feature Engineering**
 
-* Standardized skills using text normalization and taxonomy mapping.
-* Engineered new features: `salary_midpoint`, `skill_count`, `posting_year`, etc.
-* Created profiling snapshots (categorical & numerical).
-* Exported cleaned dataset (`cleaned_master.csv`) for downstream analysis.
+* Standardized skills through normalization and taxonomy mapping.
+* Engineered features: `salary_midpoint`, `skill_count`, `posting_year`, etc.
+* Generated profiling snapshots (`profiling_categorical_snapshot.csv`, `profiling_numeric_snapshot.csv`).
+* Exported unified cleaned dataset for downstream modeling.
 
-### **Phase 3 – Exploratory Data Analysis (Completed)**
+### **Phase 3 – Exploratory Data Analysis**
 
-* Conducted univariate, bivariate, and multivariate analyses on the cleaned master dataset.
-* Identified correlations, temporal hiring trends, and salary distributions.
-* Generated 30+ visualizations automatically saved under `outputs/figures/`.
-* Derived actionable insights:
+* Conducted univariate, bivariate, and multivariate analysis on `cleaned_master.csv`.
+* Identified correlations, hiring trends, salary distributions, and geographic demand.
+* Generated 30+ visualizations stored in `/outputs/figures/`.
+* Derived insights:
 
   * Salary increases significantly with seniority and full-time roles.
-  * Remote jobs show competitive compensation levels.
-  * Top in-demand skills: **Python, SQL, Machine Learning, Cloud, Tableau**.
-  * Emerging hubs: **USA, India, UK, and Germany** dominate tech hiring.
-* Produced structured outputs: `eda_summary.json`, `eda_kpis.json`, and multiple CSV summaries in `/outputs/tables/`.
+  * Remote jobs offer competitive compensation.
+  * Most in-demand skills: **Python, SQL, Machine Learning, Cloud, Tableau.**
+  * Leading hiring regions: **USA, India, UK, Germany.**
 
-### **Phase 4 – Modeling & Forecasting (Upcoming)**
+### **Phase 4 – Modeling & Evaluation (Completed)**
 
-* Apply ML algorithms: Prophet/ARIMA for skill forecasting, XGBoost for salary prediction.
-* Perform clustering to detect job role patterns and emerging skill sets.
+* **Forecasting:** Skill demand predictions (12–18 months) using **Naive, ARIMA, Prophet** models.
+* **Salary Prediction:** Ridge, Random Forest, and XGBoost regressors achieving **R² > 0.7**.
+* **Outputs:**
 
-### **Phase 5 – Visualization & Reporting (Upcoming)**
+  * `models/salary_predictor.pkl`, `models/skill_demand_forecast.pkl`
+  * `outputs/tables/model_metrics.csv`, `outputs/figures/model_performance.png`
+* Insights:
 
-* Develop a Power BI dashboard showing salary trends, skill forecasts, and market gaps.
-* Submit final report and presentation as per Datathon guidelines.
+  * AI/ML and Cloud-related skills expected to grow 15–20%.
+  * Skills like **TensorFlow, PyTorch, and Kubernetes** offer the highest salary premiums.
+
+### **Phase 5 – Visualization & Reporting (In Progress)**
+
+* Building a Power BI dashboard integrating forecast and salary insights.
+* Preparing final report and presentation for Datathon submission.
 
 ---
 
@@ -91,58 +98,62 @@ datathon-2025/
 │
 ├── data/
 │   ├── README.md                    # Data dictionary and sources
-│   ├── external/                    # Supporting or reference datasets
+│   ├── external/                    # Supporting/reference datasets
 │   ├── processed/                   # Cleaned and merged data
-│   │   └── cleaned_master.csv
+│   │   ├── cleaned_master.csv
+│   │   ├── X_train.csv / y_train.csv
+│   │   └── X_test.csv / y_test.csv
 │   └── raw/                         # Original Kaggle datasets
 │       ├── dataset1_data_science_job.csv
 │       ├── dataset2_all_job_post.csv
 │       ├── dataset3_ai_job_dataset.csv
 │       └── dataset3_ai_job_dataset1.csv
 │
-├── models/                          # Trained model files (.pkl, .sav)
+├── models/                          # Trained model artifacts
+│   ├── salary_predictor.pkl
+│   ├── skill_demand_forecast.pkl
+│   └── skill_clusterer.pkl
 │
-├── notebooks/                       # Jupyter notebooks for each phase
-│   ├── 01_data_collection.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   └── 03_eda.ipynb
+├── notebooks/                       # Jupyter notebooks by phase
+│   ├── 04_feature_engineering.ipynb
+│   ├── 05_modeling_forecasting.ipynb
+│   ├── 06_modeling_salary_prediction.ipynb
+│   ├── 07_clustering_analysis.ipynb
+│   └── 08_recommendation_engine.ipynb
 │
 ├── outputs/
-│   ├── figures/                     # Auto-saved EDA plots (univariate, temporal, etc.)
-│   ├── insights/                    # Textual insight summaries
-│   └── tables/                      # Aggregated metrics / CSV summaries
+│   ├── figures/                     # Visualizations & charts
+│   └── tables/                      # Aggregated model metrics
 │
-├── reports/                         # Reports and profiling results
-│   ├── data_quality_report.json
-│   ├── eda_summary.json
-│   ├── eda_kpis.json
-│   ├── profiling_categorical_snapshot.csv
-│   └── profiling_numeric_snapshot.csv
+├── reports/                         # Reports & documentation
+│   ├── model_evaluation_report.json
+│   ├── model_validation_notes.md
+│   └── data_quality_report.json
 │
-└── src/                             # Python scripts for preprocessing & modeling
+└── src/                             # Optional Python scripts for automation
 ```
 
 ---
 
-## 🧮 Key Deliverables (Phase-Wise)
+## 🦎 Key Deliverables (Phase-Wise)
 
-| Phase   | Deliverable                                        | Status      |
-| ------- | -------------------------------------------------- | ----------- |
-| Phase 1 | Dataset sourcing, schema validation                | ✅ Completed |
-| Phase 2 | Data cleaning, feature engineering, quality report | ✅ Completed |
-| Phase 3 | Exploratory Data Analysis & insight generation     | ✅ Completed |
-| Phase 4 | Modeling & evaluation                              | ⏳ Upcoming  |
-| Phase 5 | Dashboard, final report & presentation             | ⏳ Upcoming  |
+| Phase   | Deliverable                                        | Status         |
+| ------- | -------------------------------------------------- | -------------- |
+| Phase 1 | Data sourcing, schema validation                   | ✅ Completed    |
+| Phase 2 | Data cleaning, feature engineering, quality report | ✅ Completed    |
+| Phase 3 | Exploratory analysis & insights                    | ✅ Completed    |
+| Phase 4 | Modeling, forecasting, salary prediction           | ✅ Completed    |
+| Phase 5 | Dashboard, final report & presentation             | 🚧 In Progress |
 
 ---
 
 ## 📊 Current Outputs
 
-* `cleaned_master.csv` → Unified master dataset (36 columns, ~36K rows)
-* `eda_summary.json` / `eda_kpis.json` → Key metrics, insights, and completeness summary
-* `profiling_categorical_snapshot.csv` / `profiling_numeric_snapshot.csv` → Profiling statistics
-* `data_quality_report.json` → Completeness & validity summary
-* 35+ auto-saved visualizations in `/outputs/figures/` across 7 categories (univariate, temporal, salary, geo, skills, relationships, outliers)
+* **Processed Data:** `cleaned_master.csv` (36 columns, ~36K rows)
+* **Models:** `salary_predictor.pkl`, `skill_demand_forecast.pkl`
+* **Reports:** `model_evaluation_report.json`, `data_quality_report.json`
+* **Visuals:** `model_performance.png`, `feature_importance.png`, `forecast_trend.png`
+* **Tables:** `model_metrics.csv`, `forecast_results.csv`, `feature_summary.csv`
 
 ---
 
@@ -152,7 +163,7 @@ datathon-2025/
 git clone https://github.com/<username>/datathon-2025.git
 cd datathon-2025
 pip install -r requirements.txt
-jupyter notebook notebooks/03_eda.ipynb
+jupyter notebook notebooks/06_modeling_salary_prediction.ipynb
 ```
 
 ---
@@ -162,3 +173,4 @@ jupyter notebook notebooks/03_eda.ipynb
 **Team Contact:** [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)
 
 ---
+
