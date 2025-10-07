@@ -1,0 +1,39 @@
+{
+  "generated_at_utc": "2025-10-07 16:34:51.979789+00:00",
+  "top_k": 24,
+  "skills": [
+    "Python",
+    "SQL",
+    "TensorFlow",
+    "Kubernetes",
+    "PyTorch",
+    "Scala",
+    "Linux",
+    "Git",
+    "Java",
+    "GCP",
+    "Hadoop",
+    "R",
+    "Tableau",
+    "Computer Vision",
+    "Data Visualization",
+    "Spark",
+    "MLOps",
+    "Azure",
+    "Deep Learning",
+    "NLP",
+    "AWS",
+    "Mathematics",
+    "Docker",
+    "Statistics"
+  ],
+  "metrics_summary": {
+    "rows": 384,
+    "skills_evaluated": 24,
+    "models": [
+      "Naive",
+      "ARIMA",
+      "Prophet"
+    ]
+  }
+}
