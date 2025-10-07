@@ -1,0 +1,25 @@
+skill,median_with,delta_vs_overall
+NLP,104573.0,1366.5
+Docker,104369.0,1162.5
+Git,104238.0,1031.5
+Kubernetes,103951.0,744.5
+Computer Vision,103900.0,693.5
+Data Visualization,103881.0,674.5
+Spark,103835.0,628.5
+Deep Learning,103762.0,555.5
+Hadoop,103650.5,444.0
+Scala,103610.0,403.5
+Python,103447.0,240.5
+MLOps,103430.0,223.5
+Mathematics,103343.0,136.5
+GCP,103245.0,38.5
+Java,103196.0,-10.5
+PyTorch,103184.0,-22.5
+Azure,102923.0,-283.5
+TensorFlow,102525.5,-681.0
+R,102501.0,-705.5
+Linux,102494.0,-712.5
+AWS,102384.0,-822.5
+SQL,102307.0,-899.5
+Statistics,101229.5,-1977.0
+Tableau,100721.0,-2485.5

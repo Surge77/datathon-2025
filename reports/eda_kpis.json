@@ -1,0 +1,20 @@
+{
+  "rows_analyzed": 36167,
+  "n_columns": 31,
+  "median_salary_usd": 103206.5,
+  "top_locations_example": {
+    "Switzerland": 1565,
+    "Germany": 1560,
+    "Canada": 1550,
+    "Denmark": 1537,
+    "Singapore": 1526
+  },
+  "top_skills_example": {
+    "Python": 8949,
+    "SQL": 6918,
+    "TensorFlow": 6118,
+    "Kubernetes": 6087,
+    "PyTorch": 5608
+  },
+  "recent_90d_share": 0.1516022893798214
+}

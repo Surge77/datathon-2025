@@ -1,9 +1,27 @@
+# Core libraries
 pandas
-numpy
+numpy<2.0
 matplotlib
 seaborn
+plotly
+
+# Machine learning & forecasting
 scikit-learn
 xgboost
 prophet
+
+# Explainability
 shap
-plotly
+
+# Data profiling & reporting
+ydata-profiling
+jinja2
+
+# Utilities
+tqdm
+python-dateutil
+pytz
+openpyxl
+
+# (Optional for mapping/geo visuals)
+# folium
