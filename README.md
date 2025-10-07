@@ -118,8 +118,6 @@ datathon-2025/
 │   ├── 04_feature_engineering.ipynb
 │   ├── 05_modeling_forecasting.ipynb
 │   ├── 06_modeling_salary_prediction.ipynb
-│   ├── 07_clustering_analysis.ipynb
-│   └── 08_recommendation_engine.ipynb
 │
 ├── outputs/
 │   ├── figures/                     # Visualizations & charts
