@@ -157,13 +157,6 @@ jupyter notebook notebooks/03_eda.ipynb
 
 ---
 
-## 🎓 Academic Context
-
-This project is developed as part of the **Data Analytics ISE Datathon (Sem VII)** under the Department of Electronics Engineering, WIT Solapur.
-It demonstrates application of the full **OSEMN pipeline** — *Obtain, Scrub, Explore, Model, iNterpret*.
-
----
-
 ## 📧 Contact
 
 **Team Contact:** [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)
