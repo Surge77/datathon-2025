@@ -2,9 +2,6 @@
 
 > A data-driven exploration of the global tech job market — identifying the most in-demand skills, analyzing salary trends, and revealing actionable insights to bridge the gap between industry demand and workforce readiness.
 
-**🏫 Institution:** Walchand Institute of Technology, Solapur
-**📅 Academic Year:** 2025–26 (Semester VII Datathon)
-
 ---
 
 ## 👥 Team Members
@@ -27,7 +24,7 @@ The rapid evolution of technology has created a significant **skill gap** betwee
 
 ---
 
-## 📂 Data Sources
+## 🗂️ Data Sources
 
 We integrated three primary Kaggle datasets:
 
@@ -55,19 +52,27 @@ We integrated three primary Kaggle datasets:
 * Created profiling snapshots (categorical & numerical).
 * Exported cleaned dataset (`cleaned_master.csv`) for downstream analysis.
 
-### **Phase 3 – Exploratory Data Analysis (Ongoing)**
+### **Phase 3 – Exploratory Data Analysis (Completed)**
 
-* Perform univariate, bivariate, and multivariate analyses.
-* Identify correlations, skill trends, and salary distributions.
-* Generate key insights for model design (forecasting, prediction, clustering).
+* Conducted univariate, bivariate, and multivariate analyses on the cleaned master dataset.
+* Identified correlations, temporal hiring trends, and salary distributions.
+* Generated 30+ visualizations automatically saved under `outputs/figures/`.
+* Derived actionable insights:
 
-### **Phase 4 – Modeling & Forecasting**
+  * Salary increases significantly with seniority and full-time roles.
+  * Remote jobs show competitive compensation levels.
+  * Top in-demand skills: **Python, SQL, Machine Learning, Cloud, Tableau**.
+  * Emerging hubs: **USA, India, UK, and Germany** dominate tech hiring.
+* Produced structured outputs: `eda_summary.json`, `eda_kpis.json`, and multiple CSV summaries in `/outputs/tables/`.
 
-* Apply ML algorithms: ARIMA/Prophet (skill forecasting), XGBoost (salary prediction), clustering for role patterns.
+### **Phase 4 – Modeling & Forecasting (Upcoming)**
 
-### **Phase 5 – Visualization & Reporting**
+* Apply ML algorithms: Prophet/ARIMA for skill forecasting, XGBoost for salary prediction.
+* Perform clustering to detect job role patterns and emerging skill sets.
 
-* Develop Power BI dashboard showing trends, forecasts, and insights.
+### **Phase 5 – Visualization & Reporting (Upcoming)**
+
+* Develop a Power BI dashboard showing salary trends, skill forecasts, and market gaps.
 * Submit final report and presentation as per Datathon guidelines.
 
 ---
@@ -99,15 +104,18 @@ datathon-2025/
 │
 ├── notebooks/                       # Jupyter notebooks for each phase
 │   ├── 01_data_collection.ipynb
-│   └── 02_data_cleaning.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   └── 03_eda.ipynb
 │
 ├── outputs/
-│   ├── figures/                     # Visuals from EDA and reports
+│   ├── figures/                     # Auto-saved EDA plots (univariate, temporal, etc.)
 │   ├── insights/                    # Textual insight summaries
 │   └── tables/                      # Aggregated metrics / CSV summaries
 │
-├── reports/                         # Reports and data profiling results
+├── reports/                         # Reports and profiling results
 │   ├── data_quality_report.json
+│   ├── eda_summary.json
+│   ├── eda_kpis.json
 │   ├── profiling_categorical_snapshot.csv
 │   └── profiling_numeric_snapshot.csv
 │
@@ -118,21 +126,23 @@ datathon-2025/
 
 ## 🧮 Key Deliverables (Phase-Wise)
 
-| Phase   | Deliverable                                        | Status         |
-| ------- | -------------------------------------------------- | -------------- |
-| Phase 1 | Dataset sourcing, schema validation                | ✅ Completed    |
-| Phase 2 | Data cleaning, feature engineering, quality report | ✅ Completed    |
-| Phase 3 | Exploratory Data Analysis & insight generation     | 🔄 In Progress |
-| Phase 4 | Modeling & evaluation                              | ⏳ Upcoming     |
-| Phase 5 | Dashboard, final report & presentation             | ⏳ Upcoming     |
+| Phase   | Deliverable                                        | Status      |
+| ------- | -------------------------------------------------- | ----------- |
+| Phase 1 | Dataset sourcing, schema validation                | ✅ Completed |
+| Phase 2 | Data cleaning, feature engineering, quality report | ✅ Completed |
+| Phase 3 | Exploratory Data Analysis & insight generation     | ✅ Completed |
+| Phase 4 | Modeling & evaluation                              | ⏳ Upcoming  |
+| Phase 5 | Dashboard, final report & presentation             | ⏳ Upcoming  |
 
 ---
 
 ## 📊 Current Outputs
 
 * `cleaned_master.csv` → Unified master dataset (36 columns, ~36K rows)
+* `eda_summary.json` / `eda_kpis.json` → Key metrics, insights, and completeness summary
 * `profiling_categorical_snapshot.csv` / `profiling_numeric_snapshot.csv` → Profiling statistics
 * `data_quality_report.json` → Completeness & validity summary
+* 35+ auto-saved visualizations in `/outputs/figures/` across 7 categories (univariate, temporal, salary, geo, skills, relationships, outliers)
 
 ---
 
@@ -142,14 +152,15 @@ datathon-2025/
 git clone https://github.com/<username>/datathon-2025.git
 cd datathon-2025
 pip install -r requirements.txt
-jupyter notebook notebooks/02_data_cleaning.ipynb
+jupyter notebook notebooks/03_eda.ipynb
 ```
 
 ---
 
 ## 🎓 Academic Context
 
-This project is developed as part of the **Data Analytics ISE Datathon (Sem VII)** under the Department of Electronics Engineering, WIT Solapur. It demonstrates application of the full **OSEMN pipeline** — *Obtain, Scrub, Explore, Model, iNterpret*.
+This project is developed as part of the **Data Analytics ISE Datathon (Sem VII)** under the Department of Electronics Engineering, WIT Solapur.
+It demonstrates application of the full **OSEMN pipeline** — *Obtain, Scrub, Explore, Model, iNterpret*.
 
 ---
 
@@ -158,5 +169,3 @@ This project is developed as part of the **Data Analytics ISE Datathon (Sem VII)
 **Team Contact:** [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)
 
 ---
-
-📘 *Walchand Institute of Technology, Solapur – Data Analytics Datathon 2025–26*
