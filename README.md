@@ -38,21 +38,21 @@ We integrated three primary Kaggle datasets:
 
 ## ⚙️ Methodology Overview
 
-### **Phase 1 – Data Collection & Cleaning**
+### **Phase 1 – Data Collection & Cleaning (Completed)**
 
 * Gathered raw datasets from Kaggle sources.
 * Standardized schema, handled missing values, duplicates, and outliers.
 * Validated integrity using automated quality checks.
 * Generated `data_quality_report.json` summarizing completeness and validity.
 
-### **Phase 2 – Pre-processing & Feature Engineering**
+### **Phase 2 – Pre-processing & Feature Engineering (Completed)**
 
 * Standardized skills through normalization and taxonomy mapping.
 * Engineered features: `salary_midpoint`, `skill_count`, `posting_year`, etc.
 * Generated profiling snapshots (`profiling_categorical_snapshot.csv`, `profiling_numeric_snapshot.csv`).
 * Exported unified cleaned dataset for downstream modeling.
 
-### **Phase 3 – Exploratory Data Analysis**
+### **Phase 3 – Exploratory Data Analysis (Completed)**
 
 * Conducted univariate, bivariate, and multivariate analysis on `cleaned_master.csv`.
 * Identified correlations, hiring trends, salary distributions, and geographic demand.
@@ -77,10 +77,16 @@ We integrated three primary Kaggle datasets:
   * AI/ML and Cloud-related skills expected to grow 15–20%.
   * Skills like **TensorFlow, PyTorch, and Kubernetes** offer the highest salary premiums.
 
-### **Phase 5 – Visualization & Reporting (In Progress)**
+### **Phase 5 – Visualization & Reporting (Completed)**
 
-* Building a Power BI dashboard integrating forecast and salary insights.
-* Preparing final report and presentation for Datathon submission.
+* Created an **interactive Power BI dashboard** integrating forecast and salary insights.
+* Dashboard visuals stored in `/dashboards/dashboard_screenshots/`.
+* Final report and presentation prepared for Datathon submission.
+* Visualizations highlight:
+
+  * Skill demand trends and salary growth patterns.
+  * Career path recommendations based on forecast data.
+  * Skill gap heatmaps and geographic insights.
 
 ---
 
@@ -94,7 +100,10 @@ datathon-2025/
 ├── README.md
 ├── requirements.txt
 │
-├── dashboards/                      # Power BI / Tableau dashboards
+├── dashboards/                      # Power BI dashboards & visuals
+│   ├── dashboard_screenshots/
+│   ├── power_bi_dashboard.pbix
+│   └── dashboard_documentation.md
 │
 ├── data/
 │   ├── README.md                    # Data dictionary and sources
@@ -111,19 +120,24 @@ datathon-2025/
 │
 ├── models/                          # Trained model artifacts
 │   ├── skill_demand_forecast.pkl
+│   ├── salary_predictor.pkl
+│   └── skill_clusterer.pkl
 │
 ├── notebooks/                       # Jupyter notebooks by phase
 │   ├── 04_feature_engineering.ipynb
 │   ├── 05_modeling_forecasting.ipynb
 │   ├── 06_modeling_salary_prediction.ipynb
+│   ├── 07_clustering_analysis.ipynb
+│   └── 08_recommendation_engine.ipynb
 │
 ├── outputs/
 │   ├── figures/                     # Visualizations & charts
 │   └── tables/                      # Aggregated model metrics
 │
 ├── reports/                         # Reports & documentation
+│   ├── final_report.pdf
+│   ├── presentation.pptx
 │   ├── model_evaluation_report.json
-│   ├── model_validation_notes.md
 │   └── data_quality_report.json
 │
 └── src/                             # Optional Python scripts for automation
@@ -131,24 +145,24 @@ datathon-2025/
 
 ---
 
-## 🦎 Key Deliverables (Phase-Wise)
+## 🧹 Key Deliverables (Final)
 
-| Phase   | Deliverable                                        | Status         |
-| ------- | -------------------------------------------------- | -------------- |
-| Phase 1 | Data sourcing, schema validation                   | ✅ Completed    |
-| Phase 2 | Data cleaning, feature engineering, quality report | ✅ Completed    |
-| Phase 3 | Exploratory analysis & insights                    | ✅ Completed    |
-| Phase 4 | Modeling, forecasting, salary prediction           | ✅ Completed    |
-| Phase 5 | Dashboard, final report & presentation             | 🚧 In Progress |
+| Phase   | Deliverable                                        | Status      |
+| ------- | -------------------------------------------------- | ----------- |
+| Phase 1 | Data sourcing, schema validation                   | ✅ Completed |
+| Phase 2 | Data cleaning, feature engineering, quality report | ✅ Completed |
+| Phase 3 | Exploratory analysis & insights                    | ✅ Completed |
+| Phase 4 | Modeling, forecasting, salary prediction           | ✅ Completed |
+| Phase 5 | Dashboard, final report & presentation             | ✅ Completed |
 
 ---
 
-## 📊 Current Outputs
+## 📊 Final Outputs
 
 * **Processed Data:** `cleaned_master.csv` (36 columns, ~36K rows)
 * **Models:** `salary_predictor.pkl`, `skill_demand_forecast.pkl`
-* **Reports:** `model_evaluation_report.json`, `data_quality_report.json`
-* **Visuals:** `model_performance.png`, `feature_importance.png`, `forecast_trend.png`
+* **Reports:** `final_report.pdf`, `presentation.pptx`, `data_quality_report.json`
+* **Visuals:** `forecast_trend.png`, `skill_gap_heatmap.png`, `salary_growth_chart.png`
 * **Tables:** `model_metrics.csv`, `forecast_results.csv`, `feature_summary.csv`
 
 ---
