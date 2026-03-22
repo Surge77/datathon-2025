@@ -177,10 +177,3 @@ jupyter notebook notebooks/06_modeling_salary_prediction.ipynb
 ```
 
 ---
-
-## 📧 Contact
-
-**Team Contact:** [work.tejasx@gmail.com](mailto:work.tejasx@gmail.com)
-
----
-
